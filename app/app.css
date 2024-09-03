@@ -1,6 +1,22 @@
-﻿@import '@nativescript/theme/css/core.css';
-@import '@nativescript/theme/css/default.css';
+﻿.bg-black {
+  background-color: #000;
+}
 
-Button.-primary {
-  font-size: 18;
+.debug,
+.debug * {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.debug-borders,
+.debug-borders * {
+  border-width: 1;
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.debug-borders > * {
+  border-color: rgba(0, 255, 0, 0.5);
+}
+
+.debug-borders > * > * {
+  border-color: rgba(0, 0, 255, 0.5);
 }

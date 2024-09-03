@@ -1,2 +1,19 @@
-<Frame defaultPage="main-page">
-</Frame>
+<GridLayout class="bg-black" rows="*, auto, *">
+  <GridLayout id="debug-root"
+    class="debug debug-borders"
+    row="1"
+    padding="16"
+    columns="*, *"
+    rows="*"
+    off_height="256">
+
+    <GridLayout id="debug-sibling" height="256" col="1"></GridLayout>
+
+    <GridLayout id="debug-parent" col="0" rows="*">
+
+      <!-- this should be full height -->
+      <GridLayout id="debug-inner" padding="4" row="0"></GridLayout>
+    </GridLayout>
+
+  </GridLayout>
+</GridLayout>
